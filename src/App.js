@@ -1,9 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-function App() {
+const App=()=> {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>Hello world!</div>,
+    },
+  ]); 
   return (
     <div className="App">
+      <RouterProvider router={router}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
