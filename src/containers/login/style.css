@@ -1,0 +1,21 @@
+
+.login-form {
+  height: 100%;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .email-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
+  .password-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 20px 0;
+  }
+}
