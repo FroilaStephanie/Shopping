@@ -8,6 +8,10 @@ const routes = [
   {
     path: '/login',
     element: <Login />
+  },
+  {
+    path: '/signin',
+    element: <Login />
   }
 ];
 
