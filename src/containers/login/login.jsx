@@ -1,7 +1,11 @@
 import React,{ useState } from 'react';
 import './style.css';
 
-const Login = () => {
+const Login = (props) => {
+  const {
+    isLogin,
+  } = props;
+
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   
@@ -32,9 +36,11 @@ const Login = () => {
           name="password"
         />
       </div>
-      <button>LOGIN</button>
+      <button>
+        {isLogin ? 'LOGIN' : 'SIGNIN'}
+      </button>
     </form>
-  )
+  ) 
 };
 
 export default Login;

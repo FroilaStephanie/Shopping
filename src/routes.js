@@ -7,11 +7,11 @@ const routes = [
   },
   {
     path: '/login',
-    element: <Login />
+    element: <Login isLogin={true} />
   },
   {
     path: '/signin',
-    element: <Login />
+    element: <Login isLogin={false} />
   }
 ];
 
